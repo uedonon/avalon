@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="font-size: 16px;" lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords"
+    content="Частный детский сад, Наша история, Когда регистрироваться, Детский сад полного дня, 01, Начальная школа, Информация о безопасности и благополучии студентов для родителей и студентов, Связаться с нами">
+  <meta name="description" content="">
+  <link rel="icon" type="image/svg+xml" href="{% static 'img/vector.svg' %}" sizes="128x128">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/nicepage.css'%}" media="screen">
+  {% block css %}{% endblock %}
+  <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js'%}" defer=""></script>
+  <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js'%}" defer=""></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/rastr.png",
+		"sameAs": []
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="Главная страница">
+  <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+
+<body data-home-page="" data-home-page-title="Главная" data-path-to-root="./"
+  data-include-products="false" class="u-body u-xl-mode" data-lang="ru">
+  <header class="u-clearfix u-header u-sticky u-sticky-6d88 u-white u-header" id="sec-17dd">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-submenu-level="on-click">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-3-base u-text-custom-color-1 u-text-hover-custom-color-2 u-hamburger-link-1"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-custom-font u-nav u-spacing-15 u-text-font u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-border-3 u-border-active-custom-color-2 u-border-hover-custom-color-2 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-1 u-text-hover-grey-90"
+                href="{% url 'index' %}" style="padding: 10px 20px;">Главная страница</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-3 u-border-active-custom-color-2 u-border-hover-custom-color-2 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-1 u-text-hover-grey-90"
+                href="{% url 'about' %}" style="padding: 10px 20px;">О нас</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-3 u-border-active-custom-color-2 u-border-hover-custom-color-2 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-1 u-text-hover-grey-90"
+                href="{% url 'contacts' %}" style="padding: 10px 20px;">Контакты</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-3 u-border-active-custom-color-2 u-border-hover-custom-color-2 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-1 u-text-hover-grey-90"
+                href="{% url 'gallery' %}" style="padding: 10px 20px;">Галерея</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-border-3 u-border-active-custom-color-2 u-border-hover-custom-color-2 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-1 u-text-custom-color-1 u-text-hover-grey-90"
+                style="padding: 10px 11px 10px 20px;" href="{% url 'pricelist' %}">Прайс-лист</a>
+            </li>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div
+            class="u-container-style u-custom-color-1 u-inner-container-layout u-opacity u-opacity-95 u-sidenav u-sidenav-1">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'index' %}">Главная страница</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'about' %}">О нас</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contacts' %}">Контакты</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'gallery' %}">Галлерея</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'pricelist' %}">Прайс-лист</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-custom-color-1 u-menu-overlay u-opacity u-opacity-0"></div>
+        </div>
+      </nav>
+      <img class="u-image u-image-default u-image-1" src="{% static 'img/rastr.png'%}" alt="" data-image-width="1191"
+        data-image-height="1684" data-href="{% url 'index' %}">
+    </div>
+  </header>
+
+{% block content %}
+
+{% endblock %}
+
+{% include 'avalon/footer.html' %}
+
+
+<!-- Modal -->
+<div class="modal fade" id="recordModal" tabindex="-1" role="dialog" aria-labelledby="recordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="recordModalLabel">Записать ребенка</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex"> <!-- Используем Flexbox для выравнивания -->
+        <!-- Форма -->
+        <div class="form-section" style="flex: 1; padding-right: 30px;">
+          <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <h5>Информация о родителе</h5>
+              <label for="parentFio">ФИО</label>
+              {{ form.parent_fio }}
+            </div>
+            <div class="form-group">
+              <label for="parentPhone">Телефон</label>
+              {{ form.parent_phone }}
+            </div>
+            <div class="form-group">
+              <h5>Информация о ребенке</h5>
+              <label for="childFio">ФИО</label>
+              {{ form.child_fio }}
+            </div>
+            <div class="form-group">
+              <label for="childDob">Дата рождения</label>
+              {{ form.child_dob }}
+            </div>
+              <button type="submit" class="btn btn-primary custom-btn">Записать ребенка</button>
+          </form>
+        </div>
+
+        <!-- Блок с объяснением -->
+        <div class="info-section" style="flex: 1;">
+          <h5>Зачем заполнять эту форму?</h5>
+          <ul>
+            <li><strong>Регистрация на сайте:</strong> Чтобы стать зарегистрированным пользователем и получить доступ к эксклюзивным функциям.</li>
+            <li><strong>Персонализированный опыт:</strong> Укажите ваши данные, чтобы получать рекомендации и уведомления, соответствующие вашим интересам.</li>
+            <li><strong>Безопасность:</strong> Мы используем ваш номер телефона для подтверждения вашей личности и защиты аккаунта.</li>
+            <li><strong>Поддержка и консультации:</strong> Наши специалисты могут связаться с вами для предоставления дополнительной информации или решения вопросов.</li>
+            <li>{{ error }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно для записи без блока "Зачем заполнять форму" -->
+<div class="modal fade" id="simpleRecordModal" tabindex="-1" role="dialog" aria-labelledby="simpleRecordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="simpleRecordModalLabel">Информация о вас</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Форма -->
+        <form method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="parentFio">ФИО</label>
+            {{ formSimple.parent_fio }}
+          </div>
+          <div class="form-group">
+            <label for="parentPhone">Телефон</label>
+            {{ formSimple.parent_phone }}
+          </div>
+          <button type="submit" class="btn btn-primary custom-btn">Обратный звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // Применение маски для номера телефона
+  var phoneInput = document.getElementById('parentPhone');
+  var im = new Inputmask("+7 (999) 999-99-99");  // Маска для формата +7 (XXX) XXX-XX-XX
+  im.mask(phoneInput);
+</script>
+
+
+<!-- CSS стили -->
+<style>
+  /* Цвет фона модального окна */
+  .custom-modal-content {
+    background-color: #055445; /* Цвет фона модального окна */
+    color: white; /* Белый цвет текста */
+    border-radius: 10px; /* Закругленные края */
+  }
+
+  /* Увеличиваем размер формы и добавляем фон */
+  .modal-body form {
+    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 10px; /* Закругленные края */
+    background-color: #055445; /* Цвет фона формы */
+  }
+
+  .modal-body .form-control.custom-form-control {
+    border-radius: 8px; /* Закругленные края полей */
+    background-color: #ffffff; /* Белый фон для полей */
+    color: #055445; /* Цвет текста в полях */
+    border: 1px solid #055445; /* Цвет границы */
+  }
+
+  .modal-body .form-control.custom-form-control:focus {
+    border-color: #f9af45; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px rgba(249, 175, 69, 0.5);
+  }
+
+  /* Кнопка с новым цветом и закругленными углами */
+  .custom-btn {
+    background-color: #f9af45; /* Цвет кнопки */
+    border-radius: 8px; /* Закругленные углы кнопки */
+    border: none; /* Убираем бордер */
+    color: white; /* Белый текст в кнопке */
+  }
+
+  .custom-btn:hover {
+    background-color: #e38f3d; /* Цвет кнопки при наведении */
+  }
+
+  /* Настройка Flexbox */
+  .modal-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .form-section {
+    flex: 1;
+    padding-right: 30px;
+  }
+
+  .info-section {
+    flex: 1;
+    padding-left: 30px;
+  }
+
+  .info-section h5 {
+    font-weight: bold;
+    color: #055445;
+    margin-bottom: 20px; /* Отступ под заголовком */
+  }
+
+  .info-section ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding-left: 0; /* Убираем отступ слева */
+  }
+
+  .info-section ul li {
+    font-size: 1rem;
+    line-height: 1.6; /* Высокий межстрочный интервал */
+    color: #fff; /* Белый цвет текста */
+    margin-bottom: 15px; /* Отступ между пунктами */
+  }
+
+  .info-section ul li strong {
+    color: white; /* Цвет заголовков в списке */
+  }
+
+  /* Добавляем белый цвет тексту в модальном окне */
+  .modal-header h3,
+  .modal-body label,
+  .modal-body h5,
+  .modal-footer .btn {
+    color: white !important;
+  }
+
+  /* Сделать крестик белым */
+  .close span {
+    color: white; /* Белый цвет крестика */
+    font-size: 1.5rem; /* Размер крестика, если нужно увеличить */
+  }
+
+  .close:hover {
+    color: #f9af45; /* Цвет крестика при наведении, можно изменить по желанию */
+  }
+  @media (max-width: 768px) {
+  /* Перемещаем блок с объяснением "Зачем заполнять эту форму?" вниз */
+  .modal-body {
+    flex-direction: column; /* Меняем направление flex на вертикальное */
+  }
+
+  .form-section {
+    flex: none; /* Убираем flex для формы */
+    margin-bottom: 20px; /* Добавляем отступ снизу, чтобы между блоками был промежуток */
+  }
+
+  .info-section {
+    flex: none; /* Убираем flex для блока с объяснением */
+  }
+}
+</style>
+
+
+</body>
+
+</html>

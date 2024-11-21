@@ -1,0 +1,203 @@
+<!-- Modal -->
+<div class="modal fade" id="recordModal" tabindex="-1" role="dialog" aria-labelledby="recordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="recordModalLabel">Записать ребенка</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex"> <!-- Используем Flexbox для выравнивания -->
+        <!-- Форма -->
+        <div class="form-section" style="flex: 1; padding-right: 30px;">
+          <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <h5>Информация о родителе</h5>
+              <label for="parentFio">ФИО</label>
+              <input type="text" class="form-control custom-form-control" id="parentFio" placeholder="Введите ФИО родителя" required>
+            </div>
+            <div class="form-group">
+              <label for="parentPhone">Телефон</label>
+              <input type="tel" class="form-control custom-form-control" id="parentPhone" placeholder="Введите телефон родителя" required>
+            </div>
+            <div class="form-group">
+              <h5>Информация о ребенке</h5>
+              <label for="childFio">ФИО</label>
+              <input type="text" class="form-control custom-form-control" id="childFio" placeholder="Введите ФИО ребенка" required>
+            </div>
+            <div class="form-group">
+              <label for="childDob">Дата рождения</label>
+              <input type="date" class="form-control custom-form-control" id="childDob" required>
+            </div>
+              <button type="submit" class="btn btn-primary custom-btn">Записать ребенка</button>
+          </form>
+        </div>
+
+        <!-- Блок с объяснением -->
+        <div class="info-section" style="flex: 1;">
+          <h5>Зачем заполнять эту форму?</h5>
+          <ul>
+            <li><strong>Регистрация на сайте:</strong> Чтобы стать зарегистрированным пользователем и получить доступ к эксклюзивным функциям.</li>
+            <li><strong>Персонализированный опыт:</strong> Укажите ваши данные, чтобы получать рекомендации и уведомления, соответствующие вашим интересам.</li>
+            <li><strong>Безопасность:</strong> Мы используем ваш номер телефона для подтверждения вашей личности и защиты аккаунта.</li>
+            <li><strong>Поддержка и консультации:</strong> Наши специалисты могут связаться с вами для предоставления дополнительной информации или решения вопросов.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно для записи без блока "Зачем заполнять форму" -->
+<div class="modal fade" id="simpleRecordModal" tabindex="-1" role="dialog" aria-labelledby="simpleRecordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="simpleRecordModalLabel">Информация о вас</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Форма -->
+        <form>
+          <div class="form-group">
+            <label for="parentFio">ФИО</label>
+            <input type="text" class="form-control" id="parentFio" placeholder="Введите ФИО" required>
+          </div>
+          <div class="form-group">
+            <label for="parentPhone">Телефон</label>
+            <input type="tel" class="form-control" id="parentPhone" placeholder="Введите телефон" required>
+          </div>
+          <button type="submit" class="btn btn-primary custom-btn">Обратный звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
+
+<script>
+  // Применение маски для номера телефона
+  var phoneInput = document.getElementById('parentPhone');
+  var im = new Inputmask("+7 (999) 999-99-99");  // Маска для формата +7 (XXX) XXX-XX-XX
+  im.mask(phoneInput);
+</script>
+
+
+<!-- CSS стили -->
+<style>
+  /* Цвет фона модального окна */
+  .custom-modal-content {
+    background-color: #055445; /* Цвет фона модального окна */
+    color: white; /* Белый цвет текста */
+    border-radius: 10px; /* Закругленные края */
+  }
+
+  /* Увеличиваем размер формы и добавляем фон */
+  .modal-body form {
+    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 10px; /* Закругленные края */
+    background-color: #055445; /* Цвет фона формы */
+  }
+
+  .modal-body .form-control.custom-form-control {
+    border-radius: 8px; /* Закругленные края полей */
+    background-color: #ffffff; /* Белый фон для полей */
+    color: #055445; /* Цвет текста в полях */
+    border: 1px solid #055445; /* Цвет границы */
+  }
+
+  .modal-body .form-control.custom-form-control:focus {
+    border-color: #f9af45; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px rgba(249, 175, 69, 0.5);
+  }
+
+  /* Кнопка с новым цветом и закругленными углами */
+  .custom-btn {
+    background-color: #f9af45; /* Цвет кнопки */
+    border-radius: 8px; /* Закругленные углы кнопки */
+    border: none; /* Убираем бордер */
+    color: white; /* Белый текст в кнопке */
+  }
+
+  .custom-btn:hover {
+    background-color: #e38f3d; /* Цвет кнопки при наведении */
+  }
+
+  /* Настройка Flexbox */
+  .modal-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .form-section {
+    flex: 1;
+    padding-right: 30px;
+  }
+
+  .info-section {
+    flex: 1;
+    padding-left: 30px;
+  }
+
+  .info-section h5 {
+    font-weight: bold;
+    color: #055445;
+    margin-bottom: 20px; /* Отступ под заголовком */
+  }
+
+  .info-section ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding-left: 0; /* Убираем отступ слева */
+  }
+
+  .info-section ul li {
+    font-size: 1rem;
+    line-height: 1.6; /* Высокий межстрочный интервал */
+    color: #fff; /* Белый цвет текста */
+    margin-bottom: 15px; /* Отступ между пунктами */
+  }
+
+  .info-section ul li strong {
+    color: white; /* Цвет заголовков в списке */
+  }
+
+  /* Добавляем белый цвет тексту в модальном окне */
+  .modal-header h3,
+  .modal-body label,
+  .modal-body h5,
+  .modal-footer .btn {
+    color: white !important;
+  }
+
+  /* Сделать крестик белым */
+  .close span {
+    color: white; /* Белый цвет крестика */
+    font-size: 1.5rem; /* Размер крестика, если нужно увеличить */
+  }
+
+  .close:hover {
+    color: #f9af45; /* Цвет крестика при наведении, можно изменить по желанию */
+  }
+  @media (max-width: 768px) {
+  /* Перемещаем блок с объяснением "Зачем заполнять эту форму?" вниз */
+  .modal-body {
+    flex-direction: column; /* Меняем направление flex на вертикальное */
+  }
+
+  .form-section {
+    flex: none; /* Убираем flex для формы */
+    margin-bottom: 20px; /* Добавляем отступ снизу, чтобы между блоками был промежуток */
+  }
+
+  .info-section {
+    flex: none; /* Убираем flex для блока с объяснением */
+  }
+}
+</style>

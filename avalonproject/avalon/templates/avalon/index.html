@@ -1,0 +1,390 @@
+{% extends "avalon/base.html" %}
+{% load static %}
+{% block css %}<link rel="stylesheet" href="{% static 'css/index.css'%}" media="screen">{% endblock %}
+{% block title %}Главная страница{% endblock %}
+{% block content %}
+
+<section class="u-clearfix u-container-align-center u-custom-color-1 u-section-1" id="sec-ee5f">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <div
+      class="data-layout-selected u-clearfix u-custom-color-1 u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout" style="">
+        <div class="u-layout-row" style="">
+          <div
+            class="u-align-left u-container-align-left u-container-style u-custom-color-1 u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1"
+            src="">
+            <div class="u-container-layout u-container-layout-1">
+              <h3 class="u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0">Детский развивающий центр Avalon </h3>
+              <p class="u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0">Образец текста. Нажмите, чтобы выбрать текстовое поле. Нажмите еще раз или
+                дважды щелкните, чтобы начать редактирование текста.</p>
+              <a href="#"
+                class="u-btn u-button-style u-hover-white u-text-body-alt-color u-text-hover-custom-color-2 u-btn-1"
+                data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0" data-toggle="modal" data-target="#recordModal">Записаться в сад </a>
+              <a href="#"
+                class="u-border-2 u-border-custom-color-2 u-border-hover-white u-btn u-btn-round u-button-style u-none u-radius u-btn-2"
+                data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0" data-toggle="modal" data-target="#simpleRecordModal">СВЯЗАТЬСЯ С НАМИ </a>
+            </div>
+          </div>
+          <div
+            class="u-align-center u-container-align-center u-container-style u-image u-image-round u-layout-cell u-radius u-right-cell u-size-30 u-size-xs-60 u-image-1"
+            src="" data-image-width="1280" data-image-height="853" data-animation-name="customAnimationIn"
+            data-animation-duration="1000" data-animation-delay="0">
+            <div
+              class="u-border-5 u-border-custom-color-2 u-border-no-left u-border-no-right u-container-layout u-valign-middle u-container-layout-2"
+              src=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="u-clearfix u-custom-color-2 u-lightbox u-section-2" id="sec-2040">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <h3 class="u-text u-text-body-alt-color u-text-default u-text-1">Что мы предлагаем? </h3>
+    <div class="u-expanded-width u-layout-horizontal u-list u-list-1">
+      <div class="u-repeater u-repeater-1">
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-1"
+          data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0">
+          <div class="u-container-layout u-similar-container u-container-layout-1">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-1"
+              src="{% static 'img/1.jpeg'%}" alt="" data-image-width="1080"
+              data-image-height="1440">
+            <h4 class="u-align-left u-text u-text-body-alt-color u-text-default u-text-2">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-3">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-white u-radius u-btn-1">УЗНАТЬ БОЛЬШЕ
+            </a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-2"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-2">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-2"
+              src="{% static 'img/2.jpeg'%}" alt="" data-image-width="1080"
+              data-image-height="771">
+            <h4 class="u-align-left u-text u-text-body-alt-color u-text-default u-text-4">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-5">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#" class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-white u-radius u-btn-2">
+              УЗНАТЬ БОЛЬШЕ </a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-3"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-3">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-3"
+              src="{% static 'img/3.jpg'%}" alt="" data-image-width="960" data-image-height="1280">
+            <h4 class="u-align-left u-text u-text-body-alt-color u-text-default u-text-6">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-7">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-white u-radius u-btn-3">Кнопка</a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-4"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-4">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-4"
+              src="{% static 'img/3.jpg'%}" alt="" data-image-width="960" data-image-height="1280">
+            <h4 class="u-align-left u-text u-text-body-alt-color u-text-default u-text-8">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-9">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-white u-radius u-btn-4">Кнопка</a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-5"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-5">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-5"
+              src="{% static 'img/3.jpg'%}" alt="" data-image-width="960" data-image-height="1280">
+            <h4 class="u-align-left u-text u-text-body-alt-color u-text-default u-text-10">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-11">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-white u-radius u-btn-5">Кнопка</a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-6"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-6">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-6"
+              src="{% static 'img/3.jpg'%}" alt="" data-image-width="960" data-image-height="1280">
+            <h4 class="u-align-left u-text u-text-body-alt-color u-text-default u-text-12">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-13">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-white u-radius u-btn-6">Кнопка</a>
+          </div>
+        </div>
+      </div>
+      <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+        href="#" role="button">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 31.494 31.494">
+            <path d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+  c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+  c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"></path>
+          </svg>
+        </span>
+        <span class="sr-only">
+          <svg viewBox="0 0 31.494 31.494">
+            <path d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+  c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+  c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"></path>
+          </svg>
+        </span>
+      </a>
+      <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+        href="#" role="button">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 31.49 31.49">
+            <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+          </svg>
+        </span>
+        <span class="sr-only">
+          <svg viewBox="0 0 31.49 31.49">
+            <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="u-clearfix u-custom-color-1 u-section-3" id="sec-3375">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <h1 class="u-text u-text-default u-text-1">Почему AVALON? </h1>
+    <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout">
+        <div class="u-layout-row">
+          <div class="u-size-31-sm u-size-31-xs u-size-39-lg u-size-39-xl u-size-60-md">
+            <div class="u-layout-col">
+              <div
+                class="u-container-style u-layout-cell u-left-cell u-radius u-shape-round u-size-60 u-video u-video-1"
+                src="" data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0">
+                <div class="u-background-video u-expanded" style="">
+                  <div class="embed-responsive embed-responsive-1">
+                    <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"
+                      class="embed-responsive-item"
+                      src="https://www.youtube.com/embed/B9YKnNtFqds?playlist=B9YKnNtFqds&amp;loop=1&amp;mute=1&amp;showinfo=0&amp;controls=0&amp;start=0&amp;autoplay=1"
+                      data-autoplay="1" frameborder="0" allowfullscreen=""></iframe>
+                  </div>
+                  <div class="u-video-shading"></div>
+                </div>
+                <div class="u-container-layout u-container-layout-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="u-size-21-lg u-size-21-xl u-size-29-sm u-size-29-xs u-size-60-md">
+            <div class="u-layout-col">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div
+                    class="u-align-left u-container-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-2">
+                      <p class="u-text u-text-2"> Образец текста. Нажмите, чтобы выбрать текстовое поле. Нажмите еще
+                        раз или дважды щелкните, чтобы начать редактирование текста. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div
+                    class="u-align-left u-container-align-left u-container-style u-layout-cell u-size-60 u-layout-cell-3">
+                    <div class="u-container-layout u-valign-middle u-container-layout-3">
+                      <p class="u-text u-text-default u-text-3"> Образец текста. Нажмите, чтобы выбрать текстовое
+                        поле. Нажмите еще раз или дважды щелкните, чтобы начать редактирование текста.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="u-clearfix u-lightbox u-white u-section-4" id="carousel_21aa">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <h3 class="u-text u-text-custom-color-1 u-text-default u-text-1">Кружки и секции </h3>
+    <div class="u-expanded-width u-layout-horizontal u-list u-list-1">
+      <div class="u-repeater u-repeater-1">
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-1"
+          data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0">
+          <div class="u-container-layout u-similar-container u-container-layout-1">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-1"
+              src="images/photo-1595762282663-0e37c3a7a343.jpeg" alt="" data-image-width="1080"
+              data-image-height="1440">
+            <h4 class="u-align-left u-text u-text-custom-color-1 u-text-default u-text-2">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-3">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#" class="u-btn u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius u-btn-1">УЗНАТЬ
+              БОЛЬШЕ </a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-2"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-2">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-2"
+              src="images/photo-1590326232147-2f5ce615bfc9.jpeg" alt="" data-image-width="1080"
+              data-image-height="771">
+            <h4 class="u-align-left u-text u-text-custom-color-1 u-text-default u-text-4">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-5">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#" class="u-btn u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius u-btn-2"> УЗНАТЬ
+              БОЛЬШЕ </a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-3"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-3">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-3"
+              src="{% static 'img/3.jpg'%}" alt="" data-image-width="960" data-image-height="1280">
+            <h4 class="u-align-left u-text u-text-custom-color-1 u-text-default u-text-6">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-7">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius u-btn-3">Кнопка</a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-4"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-4">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-4"
+              src="{% static 'img/3.jpg'%}" alt="" data-image-width="960" data-image-height="1280">
+            <h4 class="u-align-left u-text u-text-custom-color-1 u-text-default u-text-8">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-9">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius u-btn-4">Кнопка</a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-5"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-5">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-5"
+              src="{% static 'img/3.jpg'%}" alt="" data-image-width="960" data-image-height="1280">
+            <h4 class="u-align-left u-text u-text-custom-color-1 u-text-default u-text-10">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-11">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius u-btn-5">Кнопка</a>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-list-item-6"
+          data-animation-name="customAnimationIn" data-animation-duration="1000">
+          <div class="u-container-layout u-similar-container u-container-layout-6">
+            <img class="u-expanded-width u-image u-image-round u-radius u-image-6"
+              src="{% static 'img/3.jpg'%}" alt="" data-image-width="960" data-image-height="1280">
+            <h4 class="u-align-left u-text u-text-custom-color-1 u-text-default u-text-12">Пример заголовка</h4>
+            <p class="u-align-left u-text u-text-default u-text-13">Пример текста. Кликните, чтобы выбрать элемент
+              "Текст".</p>
+            <a href="#"
+              class="u-btn u-button-style u-custom-color-1 u-hover-custom-color-2 u-radius u-btn-6">Кнопка</a>
+          </div>
+        </div>
+      </div>
+      <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1"
+        href="#" role="button">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 31.494 31.494">
+            <path d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+  c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+  c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"></path>
+          </svg>
+        </span>
+        <span class="sr-only">
+          <svg viewBox="0 0 31.494 31.494">
+            <path d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+  c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+  c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"></path>
+          </svg>
+        </span>
+      </a>
+      <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2"
+        href="#" role="button">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 31.49 31.49">
+            <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+          </svg>
+        </span>
+        <span class="sr-only">
+          <svg viewBox="0 0 31.49 31.49">
+            <path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="u-clearfix u-custom-color-2 u-section-5" id="carousel_17f8">
+  <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+    <h1 class="u-text u-text-body-alt-color u-text-default u-text-1" data-animation-name="customAnimationIn"
+      data-animation-duration="1000" data-animation-delay="0">Фотогаллере​я </h1>
+    <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout">
+        <div class="u-layout-col">
+          <div class="u-size-30">
+            <div class="u-layout-row">
+              <div
+                class="u-container-align-center u-container-style u-image u-image-round u-layout-cell u-radius u-size-40 u-image-1"
+                data-image-width="960" data-image-height="1280"
+                data-custom-animation="{&quot;animation&quot;:{&quot;XXL&quot;:{&quot;steps&quot;:[],&quot;hidden&quot;:false,&quot;start&quot;:{&quot;at&quot;:&quot;bottom&quot;,&quot;off&quot;:0},&quot;end&quot;:{&quot;at&quot;:&quot;top&quot;,&quot;off&quot;:0}},&quot;XL&quot;:{&quot;steps&quot;:[],&quot;hidden&quot;:false,&quot;start&quot;:{&quot;at&quot;:&quot;bottom&quot;,&quot;off&quot;:&quot;&quot;},&quot;end&quot;:{&quot;at&quot;:&quot;top&quot;,&quot;off&quot;:0}},&quot;LG&quot;:{&quot;steps&quot;:[],&quot;hidden&quot;:false,&quot;start&quot;:{&quot;at&quot;:&quot;bottom&quot;,&quot;off&quot;:0},&quot;end&quot;:{&quot;at&quot;:&quot;top&quot;,&quot;off&quot;:0}},&quot;MD&quot;:{&quot;steps&quot;:[],&quot;hidden&quot;:false,&quot;start&quot;:{&quot;at&quot;:&quot;bottom&quot;,&quot;off&quot;:0},&quot;end&quot;:{&quot;at&quot;:&quot;top&quot;,&quot;off&quot;:0}},&quot;SM&quot;:{&quot;steps&quot;:[],&quot;hidden&quot;:true,&quot;start&quot;:{&quot;at&quot;:&quot;bottom&quot;,&quot;off&quot;:0},&quot;end&quot;:{&quot;at&quot;:&quot;top&quot;,&quot;off&quot;:0}},&quot;XS&quot;:{&quot;steps&quot;:[],&quot;hidden&quot;:true,&quot;start&quot;:{&quot;at&quot;:&quot;bottom&quot;,&quot;off&quot;:0},&quot;end&quot;:{&quot;at&quot;:&quot;top&quot;,&quot;off&quot;:0}}},&quot;container&quot;:&quot;&quot;}">
+                <div class="u-container-layout u-container-layout-1"></div>
+              </div>
+              <div
+                class="u-container-align-center u-container-style u-image u-image-round u-layout-cell u-radius u-size-20 u-image-2"
+                data-image-width="960" data-image-height="1280">
+                <div class="u-container-layout u-container-layout-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="u-size-30">
+            <div class="u-layout-row">
+              <div
+                class="u-container-align-center u-container-style u-image u-image-round u-layout-cell u-radius u-size-10 u-image-3"
+                data-image-width="960" data-image-height="1280">
+                <div class="u-container-layout u-container-layout-3"></div>
+              </div>
+              <div
+                class="u-container-align-center u-container-style u-image u-image-round u-layout-cell u-radius u-size-30 u-image-4"
+                data-image-width="960" data-image-height="1280">
+                <div class="u-container-layout u-container-layout-4"></div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-5">
+                <div class="u-container-layout u-valign-middle u-container-layout-5">
+                  <a href="#"
+                    class="u-border-none u-btn u-button-style u-custom-color-1 u-text-hover-white u-text-white u-btn-1">ПРОСМОТРЕТЬ
+                    ВСЕ&nbsp; </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'avalon/reviews.html' %}
+<style class="u-overlap-style">
+  .u-overlap:not(.u-sticky-scroll) .u-header {
+    background-color: #ffffff !important
+  }
+</style>
+{% endblock %}

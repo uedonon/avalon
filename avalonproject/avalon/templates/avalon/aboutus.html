@@ -1,0 +1,70 @@
+{% extends "avalon/base.html" %}
+{% load static %}
+{% block css %}<link rel="stylesheet" href="{% static 'css/aboutus.css'%}" media="screen">{% endblock %}
+{% block content %}
+
+<section class="u-clearfix u-container-align-center u-custom-color-1 u-section-1" id="sec-b33b">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <div
+      class="data-layout-selected u-clearfix u-custom-color-1 u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout" style="">
+        <div class="u-layout-row" style="">
+          <div
+            class="u-align-left u-container-align-left u-container-align-left-xl u-container-style u-custom-color-1 u-layout-cell u-left-cell u-size-60 u-size-xs-60 u-layout-cell-1"
+            src="">
+            <div class="u-container-layout u-container-layout-1">
+              <h3 class="u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0">Детский развивающий центр Avalon </h3>
+              <p class="u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0">Образец текста. Нажмите, чтобы выбрать текстовое поле. Нажмите еще раз или
+                дважды щелкните, чтобы начать редактирование текста.</p>
+              <a href=""
+                class="u-btn u-button-style u-hover-white u-text-body-alt-color u-text-hover-custom-color-2 u-btn-1"
+                data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0" data-toggle="modal" data-target="#recordModal">Записаться в сад </a>
+              <a href="#"
+                class="u-border-2 u-border-custom-color-2 u-border-hover-white u-btn u-btn-round u-button-style u-none u-radius u-btn-2"
+                data-animation-name="customAnimationIn" data-animation-duration="1000"
+                data-animation-delay="0" data-toggle="modal" data-target="#simpleRecordModal">СВЯЗАТЬСЯ С НАМИ </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="u-align-center u-clearfix u-container-align-center u-section-2" id="sec-b601">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout" style="">
+        <div class="u-layout-row" style="">
+          <div
+            class="u-align-left u-container-align-left u-container-style u-image u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-image-1"
+            src="" data-image-width="1280" data-image-height="853">
+            <div class="u-container-layout u-valign-middle u-container-layout-1" src=""></div>
+          </div>
+          <div
+            class="u-align-left u-container-align-left u-container-style u-custom-color-1 u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2">
+            <div class="u-container-layout u-container-layout-2">
+              <h3 class="u-align-left u-text u-text-default u-text-1"> Авалон — мир, где каждый ребёнок открывает свои
+                таланты!</h3>
+              <p class="u-align-left u-small-text u-text u-text-variant u-text-2"> Мы — место, где каждый ребёнок
+                раскрывает свои таланты и способности! Мы создаём атмосферу, в которой дети учат, играют, развиваются
+                и получают удовольствие от процесса обучения. В нашем центре мы предлагаем уникальные программы,
+                которые помогают развить творческое мышление, логическое восприятие и эмоциональный интеллект. <br>
+                <br>Мы понимаем, как важен каждый этап взросления, поэтому наши занятия ориентированы на всестороннее
+                развитие: от когнитивных навыков до физических упражнений. Мы работаем с детьми разного возраста,
+                обеспечивая индивидуальный подход и внимание к каждому. <br>
+                <br>Здесь ваш ребёнок не просто учится — он открывает для себя новые горизонты, учится работать в
+                команде, а главное — любит учёбу и сам процесс познания!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'avalon/reviews.html' %}
+
+{% endblock %}
